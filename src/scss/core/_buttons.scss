@@ -1,0 +1,36 @@
+.btn {
+    text-transform: uppercase;    
+    font-size: 12px;
+    border-style: none;
+    border: 2px solid #000;
+    border-radius: 0px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+    color: #000;
+
+    &:hover {
+        border: 2px solid #000;
+        opacity: 0.5;
+        background-color: #fff;
+    }
+
+    &:active {
+        border: 2px solid #000;
+        opacity: 0.4;
+        background-color: #fff;
+    }
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:hover:active {
+        background-color: #000;
+        border-color: #000;
+    }
+}

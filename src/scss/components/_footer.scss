@@ -1,0 +1,13 @@
+body > footer {
+
+    background-color: transparent;
+    padding: 30px $site-horizontal-padding;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+}

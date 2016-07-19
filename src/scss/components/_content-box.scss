@@ -1,0 +1,66 @@
+div.content-box {
+    border-bottom: 1px solid;
+    color: #e7e7e7;
+    padding: 50px $site-horizontal-padding;
+
+    & > .container-fluid > .row {
+        position: relative;
+
+        & > .button-holder {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+#about {
+    padding-top: $nav-height;
+    
+}
+
+#how-to-use {
+    padding: 50px $site-horizontal-padding - $info-box-horizontal-padding;
+}
+
+.col-md-6 {
+    text-align: center;
+    padding: 10px 0;
+    color: #000;
+
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin: 0px;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, .5);
+    }
+}
+
+.info-box {
+    text-align: left;
+    padding: $info-box-horizontal-padding;
+
+    h5 {
+        font-size: 16px;
+        margin: 0px;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

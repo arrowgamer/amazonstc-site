@@ -1,0 +1,61 @@
+body > header > nav {
+    @extend .navbar;
+    @extend .navbar-default;
+
+    position: absolute;
+    background-color: #fff;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    padding: 50px $site-horizontal-padding;
+    margin: 0;
+    /*top: -$sticky-nav-height;*/
+    left: 0;
+    right: 0;
+
+    &.sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 20px $site-horizontal-padding;
+        z-index: 1;
+        top: 0;
+        transition: top .33s ease;
+    }
+
+    .container-fluid {
+        padding: 0;
+
+        .navbar-brand {
+            text-align: center;
+            display: block;
+            float: none;
+
+            @media (min-width: 768px) {
+                float: left;
+            }
+        }
+
+        a {
+            color: #000 !important;
+            text-transform: uppercase;
+            padding: $navbar-link-horizontal-padding;
+            text-align: center;
+
+            &.active,
+            &.active:hover,
+            &.active:focus {
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            @extend .nav;
+            @extend .navbar-nav;
+            @extend .navbar-right;
+
+            li a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
